@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>scorekeeper</title>
+        <link rel="stylesheet" href="index.css">
+        <script src="style.js"></script>
+    </head>
+    <body>
+
+     <header class="nav-bar">
+       <div class="logo">
+          <img src="logo.png" alt="Logo" id="image">
+          <h2 id="logo-name">ScoreKeeper</h2>
+       </div>
+        <button class="print" onclick="window.print()">Print</button>
+        <button class="result" id="result" onclick="result()">Result</button>
+     </header>
+
+       <!--     FORM   -->
+   
+       <form action=#>
+        <div class="team-name">
+         
+            <h1 id="heading">Enter the team names </h1>
+            <label for="team-1">Team 1 :</label>
+          <input type="text" onfocus="this.value=''" name="team-1" value="Team-1" id="team-1-name">
+        
+
+        
+            <label for="team-2">Team 2 :</label>             
+          <input type="text" onfocus="this.value=''" name="team-2" value="Team-2" id="team-2-name">
+     
+ 
+           <label for="over">Over-limit :</label>
+          <input type="text" onfocus="this.value=''" name="over" value="20" id="over-limit">
+     
+        
+        <!--  -->
+        <input type="button" class="submit" id="submit"  onclick="rename()" value="Submit">
+        </div>
+    </form>  
+
+   
+
+
+     <div class="scoreboard">
+    
+      <!--    team 1 scoreboard      -->
+
+       <div class="team1">
+           <h2 id="team1-name">Team 1</h2>
+           <hr>
+           <h2 id="team1-score-text">Score</h2>
+           <div class="team1-score" id="score1" >
+            
+           </div>
+          
+           <hr>
+           <div class="button">
+            <input type="button" onclick="myFunction0()" class="team1-button-0" value="0" id="buttons-team1-0">
+            <input type="button" onclick="myFunction1()" class="team1-button-1" value="1" id="buttons-team1-1">
+            <input type="button" onclick="myFunction2()" class="team1-button-2" value="2" id="buttons-team1-2">
+            <input type="button" onclick="myFunction3()" class="team1-button-3" value="3" id="buttons-team1-3">
+            <input type="button" onclick="myFunction4()" class="team1-button-4" value="4" id="buttons-team1-4">
+            <input type="button" onclick="myFunction5()" class="team1-button-5" value="5" id="buttons-team1-5">
+            <input type="button" onclick="myFunction6()" class="team1-button-6" value="6" id="buttons-team1-6">
+            <input type="button" onclick="myFunctionWd()" class="team1-button-Wd" value="Wd" id="buttons-team1-Wd">
+            <input type="button" onclick="myFunctionW()" class="team1-button-W" value="W" id="buttons-team1-W">
+            <input type="button" onclick="myFunctionNb()" class="team1-button-Nb" value="Nb" id="buttons-team1-Nb">
+        
+          </div>
+
+          <div class="total">
+            <h2>Total :         </h2>
+            <h3 id ="team1-total"> 0/0</h3>
+            <h3 id="team1-over">0.0</h3>
+            
+          </div>
+       </div>
+
+      <!--    team 2 scoreboard      -->
+
+       <div class="team2">
+
+        <h2 id="team2-name">Team 2</h2>
+           <hr>
+           <h2 id="team2-score-text">Score</h2>
+           
+           <div class="team2-score" id ="score2">
+
+           </div>
+           <hr>
+           <div class="button">
+            <button class="team2-button-0" onclick ="myFunction_0()" id="buttons-team2">0</button>
+            <button class="team2-button-1" onclick ="myFunction_1()" id="buttons-team2">1</button>
+            <button class="team2-button-2" onclick ="myFunction_2()" id="buttons-team2">2</button>
+            <button class="team2-button-3" onclick ="myFunction_3()" id="buttons-team2">3</button>
+            <button class="team2-button-4" onclick ="myFunction_4()" id="buttons-team2">4</button>
+            <button class="team2-button-5" onclick ="myFunction_5()" id="buttons-team2">5</button>
+            <button class="team2-button-6" onclick ="myFunction_6()" id="buttons-team2">6</button>
+            <button class="team2-button-Wd"onclick ="myFunction_Wd()"  id="buttons-team2">Wd</button>
+            <button class="team2-button-W" onclick ="myFunction_W()" id="buttons-team2">W</button>
+            <button class="team2-button-Nb" onclick ="myFunction_Nb()"  id="buttons-team2">Nb</button>
+          </div>
+
+          <div class="total">
+            <h2>Total : </h2>
+            <h3 id="team2-total">0/0</h3>
+            <h3 id="team2-over">0.0</h3>
+          </div>
+
+        </div>
+      
+     </div>
+     <!--  win status  -->
+     <div class="win-status">
+
+      <h1>Congrutulations!!!!<p1 id="emoji">&#127942</p1></h1>
+      <h2 id="winner"> Match in progress.......</h2>
+
+     </div>
+
+
+     <footer>
+     <div class="footer">
+      <h4>copyright</h4>
+      <h4>@2020UGCS003</h4>
+      <h4>ScoreKeeper</h4>
+      <h4>2022</h4>
+      </div>
+      </footer>
+    </body>
+
+    
+</html>
